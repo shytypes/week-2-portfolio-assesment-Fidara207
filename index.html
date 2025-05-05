@@ -224,16 +224,21 @@
 
       <form id="contactForm">
         <label for="firstName">First Name *</label>
-        <input type="text" id="firstName" />
+        <input type="text" id="firstName" placeholder=" Jane" />
 
         <label for="lastName">Last Name *</label>
-        <input type="text" id="lastName" />
+        <input type="text" id="lastName" placeholder=" Doe" />
 
         <label for="email">Email *</label>
-        <input type="text" id="email" />
+        <input type="email" id="email" placeholder=" janedoe@email.com" />
 
         <label for="message">Message *</label>
-        <textarea name="message" id="message" rows="4"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          placeholder="Hello, I wish connect and collaborate on a product design..."
+        ></textarea>
         <button type="submit">Send Message</button>
       </form>
       <div id="responseMessage"></div>

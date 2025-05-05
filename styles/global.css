@@ -55,7 +55,7 @@ v {
   height: 500px;
 }
 .container {
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
   padding: 25px;
   border-radius: 25px;

@@ -21,6 +21,16 @@ form.addEventListener('submit', function (event) {
     return
   }
 
+  // //===========Check email function============//
+  // function isValidEmail(email) {
+  //   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  // }
+  // if (!isValidEmail(email)) {
+  //   responseMessage.style.color = 'red'
+  //   responseMessage.textContent = 'please enter a valid email address.'
+  //   return
+  // }
+
   //============Success Message===========//
   responseMessage.style.color = 'palevioletred'
   responseMessage.textContent = `Thank you, ${firstName}! Your message has been sent`
