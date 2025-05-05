@@ -1,4 +1,5 @@
 const form = document.getElementById('contactForm')
+const ul = document.getElementById('ul')
 const firstNameInput = document.getElementById('firstName')
 const lastNameInput = document.getElementById('lastName')
 const emailInput = document.getElementById('email')
@@ -22,10 +23,14 @@ form.addEventListener('submit', function (event) {
   }
 
   //============Display All Form Data===========//
+  function handleFormData() {
+    const li = document.createElement('li')
+  }
   responseMessage.style.color = 'palevioletred'
+  responseMessage.style.fontSize = 'large'
   responseMessage.innerHTML = `
-   <p>Thank you, ${firstName}!</p>
-   <p>Your message has been sent with the following details:</p>
+   <p  style= "color: palevioletred;">Thank you,${firstName}!</p>
+   <p  style= "color: palevioletred;">Your message has been sent with the following details:</p>
    <ul>
      <li><strong>First Name:</strong> ${firstName}</li>
      <li><strong>Last Name:</strong> ${lastName}</li>
