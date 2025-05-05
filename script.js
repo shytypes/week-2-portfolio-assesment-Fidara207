@@ -20,10 +20,19 @@ form.addEventListener('submit', function (event) {
     responseMessage.textContent = 'Please fill in all * fields.'
     return
   }
-  //============Success Message===========//
-  responseMessage.style.color = 'palevioletred'
-  responseMessage.textContent = `Thank you, ${firstName}! Your message has been sent`
 
-  //============Success Message===========//
+  //============Display All Form Data===========//
+  responseMessage.style.color = 'palevioletred'
+  responseMessage.innerHTML = `
+   <p>Thank you, ${firstName}!</p>
+   <p>Your message has been sent with the following details:</p>
+   <ul>
+     <li><strong>First Name:</strong> ${firstName}</li>
+     <li><strong>Last Name:</strong> ${lastName}</li>
+     <li><strong>Email:</strong> ${email}</li>
+     <li><strong>Message:</strong> ${message}</li>
+   </ul> `
+
+  //===========reset form============//
   form.reset()
 })
